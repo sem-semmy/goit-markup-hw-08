@@ -1,0 +1,27 @@
+.description {
+  padding-top: 0;
+  justify-content: space-between;
+
+  &__image {
+    position: relative;
+  }
+}
+
+.description-subtitle {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgb(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
