@@ -1,0 +1,40 @@
+.compani-list {
+  --card-item: 2;
+  @include mq(tab) {
+    --card-item: 3;
+  }
+  @include mq(desk) {
+    --card-item: 6;
+  }
+}
+
+// .compani-item {
+
+// }
+
+// .compani-item:last-child {
+//   margin-right: 0;
+// }
+
+.compani-link {
+  width: 100%;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: background-color, var(--transition);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.icon-compani {
+  fill: currentColor;
+}

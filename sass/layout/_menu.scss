@@ -1,0 +1,144 @@
+.menu-btn {
+  position: relative;
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  z-index: 10;
+  // transition: fill var(--transition);
+
+  @include mq(tab) {
+    display: none;
+  }
+}
+
+.icon-open {
+  opacity: 1;
+  transition: fill var(--transition);
+}
+
+.menu-btn:hover .icon-open,
+.menu-btn:focus .icon-open {
+  fill: var(--accent-color);
+}
+
+.menu-btn.is-open .icon-open {
+  opacity: 0;
+}
+
+.icon-close {
+  opacity: 0;
+  transition: fill var(--transition);
+}
+.menu-btn:hover svg .icon-close,
+.menu-btn:focus svg .icon-close {
+  fill: var(--accent-color);
+}
+.menu-btn.is-open .icon-close {
+  opacity: 1;
+}
+
+.mobil-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 48px 40px;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  transform: translateX(100%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition: transform 400ms ease-in;
+}
+
+.mobil-menu.is-open {
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.mabil-menu-nav {
+  margin-bottom: auto;
+}
+
+.menu-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-nav-linc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: auto;
+  transition: color var(--transition);
+}
+.menu-nav-linc:hover,
+.menu-nav-linc:focus {
+  color: var(--accent-color);
+}
+.carent {
+  color: var(--accent-color);
+}
+
+.mobil-adres {
+  margin-bottom: 63px;
+}
+
+.mobil-adres-linc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobil-adres-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobil-adres-linc-mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobil-soclists {
+  display: flex;
+}
+
+.mobil-soclists-linc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-right: 10px;
+}
+.mobil-soclists-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobil-soclists-item:not(:first-child) {
+  margin-left: 10px;
+}

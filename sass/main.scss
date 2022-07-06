@@ -1,19 +1,21 @@
 @import "./utils/variables";
-
-@import "./base/reset";
+@import "./utils/hiden";
+@import "./utils/mixin";
+@import "./base/common";
 @import "./base/card-set";
-
-@import "./components/container";
-@import "./components/component";
-@import "./components/modal";
-
+@import "./base/section-titel";
+@import "./base/container";
+@import "./components/bacdrop";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/section";
+@import "./components/social";
+@import "./layout/footer";
+@import "./layout/menu";
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/benefits";
-@import "./layout/filter";
-@import "./layout/description";
+@import "./layout/specifics";
+@import "./layout/produkt";
 @import "./layout/team";
-@import "./layout/team-soc";
-@import "./layout/client";
-@import "./layout/footer";
+@import "./layout/compani";
 @import "./layout/portfolio";

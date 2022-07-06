@@ -1,7 +1,10 @@
 .benefits {
   display: flex;
   justify-content: space-between;
-
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+  }
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -13,10 +16,13 @@
   }
 
   &__item {
-    width: 270px;
+    width: 450px;
+    @media screen and (max-width: 480px) {
+      margin-bottom: 30px;
+    }
   }
   &__background-item {
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;

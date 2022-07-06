@@ -1,0 +1,42 @@
+.specifics__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // min-width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.specifics__list {
+  @include mq(tab) {
+    --card-item: 2;
+  }
+  @include mq(desk) {
+    --card-item: 4;
+  }
+}
+// .specifics__item {
+//   width: 270px;
+//   margin-right: 30px;
+// }
+
+.specifics__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+  @include mq(mob-only) {
+    text-align: center;
+  }
+}
+
+.specifics__laibl {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}

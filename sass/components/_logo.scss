@@ -1,0 +1,17 @@
+.logo {
+  color: #212121;
+  font-family: var(--fonf-releway);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right: 88px;
+  display: block;
+  padding: 16px 0;
+  @include mq(desk) {
+    margin-right: 93px;
+  }
+}
+
+.logo__accent {
+  color: #2196f3;
+}
